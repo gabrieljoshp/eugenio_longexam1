@@ -39,7 +39,15 @@ class _CartScreenState extends State<CartScreen> {
               child: ListView(
                 padding: EdgeInsets.zero,
                 children: [
-                  // TODO: Create 15 Cart Items CustomHorizontalProductCard [set isCart to true and btnName into 'Check Out']
+                  CustomHorizontalProductCard(
+                    prodName: 'Test 1',
+                    prodSize: 'test',
+                    prodPrice: '\₱499.99',
+                    btnName: 'Check Out',
+                    numStars: 5,
+                    description: 'test description',
+                    isCart: true,
+                  ),
                 ],
               ),
             ),

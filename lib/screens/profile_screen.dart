@@ -97,6 +97,14 @@ class _ProfileScreenState extends State<ProfileScreen> {
                     childAspectRatio: 3 / 4,
                     children: const [
                       // TODO: Create 5 Recommended for you items [Use CustomVerticalProductCard]
+                      CustomVerticalProductCard(
+                        prodName: 'Test',
+                        prodSize: 'Large',
+                        prodPrice: '\₱799.99',
+                        numStars: 4,
+                        quantity: 1,
+                        description: 'test description',
+                      ),
                     ],
                   ),
                 ),
@@ -158,6 +166,15 @@ class _ProfileScreenState extends State<ProfileScreen> {
     return Column(
       children: [
         // TODO: Create 2 toPay CustomHorizontalProductCard [set isCheckout to true]
+        CustomHorizontalProductCard(
+          prodName: 'Test 1',
+          prodSize: 'Medium',
+          prodPrice: '\₱499.99',
+          btnName: 'Check Out',
+          numStars: 5,
+          description: 'test description',
+          isCheckout: true,
+        ),
       ],
     );
   }
@@ -166,6 +183,15 @@ class _ProfileScreenState extends State<ProfileScreen> {
     return Column(
       children: [
         // TODO: Create 3 toShip CustomHorizontalProductCard [set isCheckout to true]
+        CustomHorizontalProductCard(
+          prodName: 'Test 1',
+          prodSize: 'Medium',
+          prodPrice: '\₱499.99',
+          btnName: 'Check Out',
+          numStars: 5,
+          description: 'test description',
+          isCheckout: true,
+        ),
       ],
     );
   }
@@ -174,6 +200,15 @@ class _ProfileScreenState extends State<ProfileScreen> {
     return Column(
       children: [
         // TODO: Create 4 toReceived CustomHorizontalProductCard [set isCheckout to true]
+        CustomHorizontalProductCard(
+          prodName: 'Test 1',
+          prodSize: 'Medium',
+          prodPrice: '\₱499.99',
+          btnName: 'Check Out',
+          numStars: 5,
+          description: 'test description',
+          isCheckout: true,
+        ),
       ],
     );
   }

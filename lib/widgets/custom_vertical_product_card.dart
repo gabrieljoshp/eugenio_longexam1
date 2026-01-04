@@ -49,7 +49,7 @@ class CustomVerticalProductCard extends StatelessWidget {
         },
         child: Container(
           width: ScreenUtil().setWidth(140),
-          height: ScreenUtil().setHeight(173),
+          height: ScreenUtil().setHeight(180),
           padding: EdgeInsets.symmetric(
             horizontal: ScreenUtil().setWidth(15),
             vertical: ScreenUtil().setHeight(15),
