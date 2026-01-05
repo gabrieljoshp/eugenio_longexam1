@@ -36,7 +36,6 @@ class _ProfileScreenState extends State<ProfileScreen> {
                       radius: 30,
                       backgroundImage: AssetImage(
                         'assets/images/2023-100448Pic.jpg',
-                        'assets/images/2023-100448Pic.jpg',
                       ),
                     ),
                     SizedBox(width: ScreenUtil().setWidth(10)),
@@ -45,7 +44,6 @@ class _ProfileScreenState extends State<ProfileScreen> {
                       children: [
                         // TODO: Change the name into your own name
                         CustomText(
-                          text: 'Gabriel Josh Eugenio',
                           text: 'Gabriel Josh Eugenio',
                           fontSize: ScreenUtil().setSp(25),
                           color: NU_BLUE,
@@ -61,7 +59,6 @@ class _ProfileScreenState extends State<ProfileScreen> {
                               color: Colors.grey,
                             ),
                             CustomText(
-                              text: '12500',
                               text: '12500',
                               fontSize: ScreenUtil().setSp(12),
                               color: NU_YELLOW,
@@ -101,7 +98,6 @@ class _ProfileScreenState extends State<ProfileScreen> {
                     children: const [
                       // TODO: Create 5 Recommended for you items [Use CustomVerticalProductCard]
                       CustomVerticalProductCard(
-                        prodName: 'NU Jacket',
                         prodName: 'NU Jacket',
                         prodSize: 'Large',
                         prodImage: 'assets/images/nu_varsity.png',
