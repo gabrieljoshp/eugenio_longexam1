@@ -38,8 +38,8 @@ class DetailScreen extends StatelessWidget {
                   Image.asset(
                     prodImage,
                     height: ScreenUtil().setHeight(200),
-
-                    fit: BoxFit.cover,
+                    width: ScreenUtil().setHeight(400),
+                    fit: BoxFit.contain,
                   ),
                   Positioned(
                     top: ScreenUtil().setHeight(10),
@@ -56,7 +56,7 @@ class DetailScreen extends StatelessWidget {
                   ),
                   Positioned(
                     top: ScreenUtil().setHeight(10),
-                    left: ScreenUtil().setWidth(10),
+                    left: ScreenUtil().setWidth(320),
                     child: Container(
                       padding: const EdgeInsets.symmetric(
                         horizontal: 8,

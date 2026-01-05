@@ -36,6 +36,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                       radius: 30,
                       backgroundImage: AssetImage(
                         'assets/images/2023-100448Pic.jpg',
+                        'assets/images/2023-100448Pic.jpg',
                       ),
                     ),
                     SizedBox(width: ScreenUtil().setWidth(10)),
@@ -44,6 +45,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                       children: [
                         // TODO: Change the name into your own name
                         CustomText(
+                          text: 'Gabriel Josh Eugenio',
                           text: 'Gabriel Josh Eugenio',
                           fontSize: ScreenUtil().setSp(25),
                           color: NU_BLUE,
@@ -59,6 +61,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                               color: Colors.grey,
                             ),
                             CustomText(
+                              text: '12500',
                               text: '12500',
                               fontSize: ScreenUtil().setSp(12),
                               color: NU_YELLOW,
@@ -99,6 +102,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                       // TODO: Create 5 Recommended for you items [Use CustomVerticalProductCard]
                       CustomVerticalProductCard(
                         prodName: 'NU Jacket',
+                        prodName: 'NU Jacket',
                         prodSize: 'Large',
                         prodImage: 'assets/images/nu_varsity.png',
                         prodPrice: '\₱2250.00',
@@ -107,23 +111,22 @@ class _ProfileScreenState extends State<ProfileScreen> {
                         description: 'VARSITY JACKET | NATIONAL UNIVERSITY',
                       ),
                       CustomVerticalProductCard(
-                        prodName: 'NU Emblem',
-                        prodSize: 'Medium',
-                        prodImage: 'assets/images/nu_emblem.png',
-                        prodPrice: '\₱800.00',
+                        prodName: 'NU Stickers',
+                        prodSize: '5 Set',
+                        prodImage: 'assets/images/nu_stickers.png',
+                        prodPrice: '\₱150.00',
                         numStars: 4,
                         quantity: 1,
-                        description: 'EMBLEM TEES | NATIONAL UNIVERSITY',
+                        description: 'MULTI STICKERS | NATIONAL UNIVERSITY',
                       ),
                       CustomVerticalProductCard(
-                        prodName: 'NU Classic',
-                        prodSize: 'Medium',
-                        prodImage: 'assets/images/nu_classic.png',
-                        prodPrice: '\₱800.00',
+                        prodName: 'NU Lanyard',
+                        prodSize: 'N/A',
+                        prodImage: 'assets/images/nu_lanyard.png',
+                        prodPrice: '\₱250.00',
                         numStars: 5,
                         quantity: 1,
-                        description:
-                            'VARSITY CLASSIC TEES | NATIONAL UNIVERSITY',
+                        description: 'LANYARD | NATIONAL UNIVERSITY',
                       ),
                       CustomVerticalProductCard(
                         prodName: 'NU Hoodie',
@@ -214,6 +217,17 @@ class _ProfileScreenState extends State<ProfileScreen> {
           description: 'VARSITY JACKET | NATIONAL UNIVERSITY',
           isCheckout: true,
         ),
+        CustomHorizontalProductCard(
+          prodName: 'NU Lady Bulldogs Champ',
+          prodSize: 'Large',
+          prodImage: 'assets/images/nu_womensvbbtbc.png',
+          prodPrice: '\₱900.00',
+          numStars: 4,
+          quantity: 1,
+          description:
+              'LADY BULLDOGS VOLLEYBALL BACK TO BACK CHAMP T-SHIRT | NATIONAL UNIVERSITY',
+          isCheckout: true,
+        ),
       ],
     );
   }
@@ -230,6 +244,27 @@ class _ProfileScreenState extends State<ProfileScreen> {
           numStars: 3,
           quantity: 1,
           description: 'SWEATER | NATIONAL UNIVERSITY',
+          isCheckout: true,
+        ),
+        CustomHorizontalProductCard(
+          prodName: 'NU Lanyard',
+          prodSize: 'N/A',
+          prodImage: 'assets/images/nu_lanyard.png',
+          prodPrice: '\₱250.00',
+          numStars: 5,
+          quantity: 1,
+          description: 'LANYARD | NATIONAL UNIVERSITY',
+          isCheckout: true,
+        ),
+        CustomHorizontalProductCard(
+          prodName: 'NU Est. 1900',
+          prodSize: 'Medium',
+          prodImage: 'assets/images/nu_est1900.png',
+          prodPrice: '\₱950.00',
+          numStars: 5,
+          quantity: 1,
+          description: 'CAP | NATIONAL UNIVERSITY',
+          isCheckout: true,
         ),
       ],
     );
@@ -247,6 +282,37 @@ class _ProfileScreenState extends State<ProfileScreen> {
           numStars: 5,
           quantity: 1,
           description: 'HOODIE | NATIONAL UNIVERSITY',
+          isCheckout: true,
+        ),
+        CustomHorizontalProductCard(
+          prodName: 'NU Scarf',
+          prodSize: 'Medium',
+          prodImage: 'assets/images/nu_scarf.png',
+          prodPrice: '\₱400.00',
+          numStars: 5,
+          quantity: 1,
+          description: 'SCARF | NATIONAL UNIVERSITY',
+          isCheckout: true,
+        ),
+        CustomHorizontalProductCard(
+          prodName: 'NU Classic T-Shirt',
+          prodSize: 'Medium',
+          prodImage: 'assets/images/nu_classic.png',
+          prodPrice: '\₱800.00',
+          numStars: 5,
+          quantity: 1,
+          description: 'VARSITY CLASSIC TEES | NATIONAL UNIVERSITY',
+          isCheckout: true,
+        ),
+        CustomHorizontalProductCard(
+          prodName: 'NU Emblem T-Shirt',
+          prodSize: 'Medium',
+          prodImage: 'assets/images/nu_emblem.png',
+          prodPrice: '\₱800.00',
+          numStars: 4,
+          quantity: 1,
+          description: 'EMBLEM TEES | NATIONAL UNIVERSITY',
+          isCheckout: true,
         ),
       ],
     );

@@ -26,7 +26,6 @@ class _ShopScreenState extends State<ShopScreen> {
         ),
         color: Colors.white,
         width: ScreenUtil().screenWidth,
-        height: ScreenUtil().setHeight(1000),
         child: Column(
           children: [
             Align(
