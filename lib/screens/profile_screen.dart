@@ -35,7 +35,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                     const CircleAvatar(
                       radius: 30,
                       backgroundImage: AssetImage(
-                        'https://cdn.photographylife.com/wp-content/uploads/2014/06/Nikon-D810-Image-Sample-6.jpg',
+                        'assets/images/2023-100448Pic.jpg',
                       ),
                     ),
                     SizedBox(width: ScreenUtil().setWidth(10)),
@@ -44,7 +44,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                       children: [
                         // TODO: Change the name into your own name
                         CustomText(
-                          text: 'Cyrus Robles',
+                          text: 'Gabriel Josh Eugenio',
                           fontSize: ScreenUtil().setSp(25),
                           color: NU_BLUE,
                           fontWeight: FontWeight.w900,
@@ -59,7 +59,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                               color: Colors.grey,
                             ),
                             CustomText(
-                              text: '1000000',
+                              text: '12500',
                               fontSize: ScreenUtil().setSp(12),
                               color: NU_YELLOW,
                               fontWeight: FontWeight.bold,
@@ -98,12 +98,50 @@ class _ProfileScreenState extends State<ProfileScreen> {
                     children: const [
                       // TODO: Create 5 Recommended for you items [Use CustomVerticalProductCard]
                       CustomVerticalProductCard(
-                        prodName: 'Test',
+                        prodName: 'NU Jacket',
                         prodSize: 'Large',
-                        prodPrice: '\₱799.99',
+                        prodImage: 'assets/images/nu_varsity.png',
+                        prodPrice: '\₱2250.00',
+                        numStars: 5,
+                        quantity: 1,
+                        description: 'VARSITY JACKET | NATIONAL UNIVERSITY',
+                      ),
+                      CustomVerticalProductCard(
+                        prodName: 'NU Emblem',
+                        prodSize: 'Medium',
+                        prodImage: 'assets/images/nu_emblem.png',
+                        prodPrice: '\₱800.00',
                         numStars: 4,
                         quantity: 1,
-                        description: 'test description',
+                        description: 'EMBLEM TEES | NATIONAL UNIVERSITY',
+                      ),
+                      CustomVerticalProductCard(
+                        prodName: 'NU Classic',
+                        prodSize: 'Medium',
+                        prodImage: 'assets/images/nu_classic.png',
+                        prodPrice: '\₱800.00',
+                        numStars: 5,
+                        quantity: 1,
+                        description:
+                            'VARSITY CLASSIC TEES | NATIONAL UNIVERSITY',
+                      ),
+                      CustomVerticalProductCard(
+                        prodName: 'NU Hoodie',
+                        prodSize: 'Large',
+                        prodImage: 'assets/images/nu_hoodie.png',
+                        prodPrice: '\₱1750.00',
+                        numStars: 5,
+                        quantity: 1,
+                        description: 'HOODIE | NATIONAL UNIVERSITY',
+                      ),
+                      CustomVerticalProductCard(
+                        prodName: 'NU Sweater',
+                        prodSize: 'Small',
+                        prodImage: 'assets/images/nu_sweater.png',
+                        prodPrice: '\₱1500.00',
+                        numStars: 3,
+                        quantity: 1,
+                        description: 'SWEATER | NATIONAL UNIVERSITY',
                       ),
                     ],
                   ),
@@ -167,12 +205,13 @@ class _ProfileScreenState extends State<ProfileScreen> {
       children: [
         // TODO: Create 2 toPay CustomHorizontalProductCard [set isCheckout to true]
         CustomHorizontalProductCard(
-          prodName: 'Test 1',
-          prodSize: 'Medium',
-          prodPrice: '\₱499.99',
-          btnName: 'Check Out',
+          prodName: 'NU Varsity Jacket',
+          prodSize: 'Large',
+          prodImage: 'assets/images/nu_varsity.png',
+          prodPrice: '\₱2250.00',
           numStars: 5,
-          description: 'test description',
+          quantity: 1,
+          description: 'VARSITY JACKET | NATIONAL UNIVERSITY',
           isCheckout: true,
         ),
       ],
@@ -184,13 +223,13 @@ class _ProfileScreenState extends State<ProfileScreen> {
       children: [
         // TODO: Create 3 toShip CustomHorizontalProductCard [set isCheckout to true]
         CustomHorizontalProductCard(
-          prodName: 'Test 1',
-          prodSize: 'Medium',
-          prodPrice: '\₱499.99',
-          btnName: 'Check Out',
-          numStars: 5,
-          description: 'test description',
-          isCheckout: true,
+          prodName: 'NU Sweater',
+          prodSize: 'Small',
+          prodImage: 'assets/images/nu_sweater.png',
+          prodPrice: '\₱1500.00',
+          numStars: 3,
+          quantity: 1,
+          description: 'SWEATER | NATIONAL UNIVERSITY',
         ),
       ],
     );
@@ -201,13 +240,13 @@ class _ProfileScreenState extends State<ProfileScreen> {
       children: [
         // TODO: Create 4 toReceived CustomHorizontalProductCard [set isCheckout to true]
         CustomHorizontalProductCard(
-          prodName: 'Test 1',
-          prodSize: 'Medium',
-          prodPrice: '\₱499.99',
-          btnName: 'Check Out',
+          prodName: 'NU Hoodie',
+          prodSize: 'Large',
+          prodImage: 'assets/images/nu_hoodie.png',
+          prodPrice: '\₱1750.00',
           numStars: 5,
-          description: 'test description',
-          isCheckout: true,
+          quantity: 1,
+          description: 'HOODIE | NATIONAL UNIVERSITY',
         ),
       ],
     );

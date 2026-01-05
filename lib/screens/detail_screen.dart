@@ -8,6 +8,7 @@ class DetailScreen extends StatelessWidget {
   final String prodName;
   final String prodSize;
   final String prodPrice;
+  final String prodImage;
   final int numStars;
   final int quantity;
   final String description;
@@ -16,6 +17,7 @@ class DetailScreen extends StatelessWidget {
     required this.prodName,
     required this.prodSize,
     required this.prodPrice,
+    required this.prodImage,
     required this.numStars,
     required this.quantity,
     this.description = 'Lorem Ipsum',
@@ -33,9 +35,11 @@ class DetailScreen extends StatelessWidget {
               Stack(
                 children: [
                   // TODO: Update the placeholder into prodImage
-                  Placeholder(
-                    fallbackHeight: ScreenUtil().setHeight(200),
-                    fallbackWidth: double.infinity,
+                  Image.asset(
+                    prodImage,
+                    height: ScreenUtil().setHeight(200),
+
+                    fit: BoxFit.cover,
                   ),
                   Positioned(
                     top: ScreenUtil().setHeight(10),

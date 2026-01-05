@@ -10,6 +10,7 @@ class CustomHorizontalProductCard extends StatefulWidget {
   final String prodName;
   final String prodSize;
   final String prodPrice;
+  final String prodImage;
   final String btnName;
   final int numStars;
   int quantity;
@@ -21,6 +22,7 @@ class CustomHorizontalProductCard extends StatefulWidget {
     required this.prodName,
     required this.prodSize,
     required this.prodPrice,
+    required this.prodImage,
     this.btnName = 'Check Product',
     required this.numStars,
     this.quantity = 1,
@@ -54,10 +56,11 @@ class _CustomHorizontalProductCardState
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              // TODO: Dynamic prodImage
-              Placeholder(
-                fallbackHeight: ScreenUtil().setHeight(80),
-                fallbackWidth: ScreenUtil().setWidth(80),
+              Image.asset(
+                widget.prodImage,
+                height: ScreenUtil().setHeight(80),
+                width: ScreenUtil().setWidth(80),
+                fit: BoxFit.cover,
               ),
               SizedBox(width: ScreenUtil().setWidth(10)),
               Column(
@@ -134,6 +137,7 @@ class _CustomHorizontalProductCardState
                                       prodName: widget.prodName,
                                       prodSize: widget.prodSize,
                                       prodPrice: widget.prodPrice,
+                                      prodImage: widget.prodImage,
                                       numStars: widget.numStars,
                                       quantity: widget.quantity,
                                       description: widget.description,

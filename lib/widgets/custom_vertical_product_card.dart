@@ -10,6 +10,7 @@ class CustomVerticalProductCard extends StatelessWidget {
   final String prodName;
   final String prodSize;
   final String prodPrice;
+  final String prodImage;
   final int numStars;
   final int quantity;
   final String description;
@@ -19,6 +20,7 @@ class CustomVerticalProductCard extends StatelessWidget {
     required this.prodName,
     required this.prodSize,
     required this.prodPrice,
+    required this.prodImage,
     required this.numStars,
     this.quantity = 1,
     this.description = '',
@@ -39,6 +41,7 @@ class CustomVerticalProductCard extends StatelessWidget {
                   prodName: prodName,
                   prodSize: prodSize,
                   prodPrice: prodPrice,
+                  prodImage: prodImage,
                   numStars: numStars,
                   quantity: quantity,
                   description: description,
@@ -49,7 +52,7 @@ class CustomVerticalProductCard extends StatelessWidget {
         },
         child: Container(
           width: ScreenUtil().setWidth(140),
-          height: ScreenUtil().setHeight(180),
+          height: ScreenUtil().setHeight(200),
           padding: EdgeInsets.symmetric(
             horizontal: ScreenUtil().setWidth(15),
             vertical: ScreenUtil().setHeight(15),
@@ -62,7 +65,12 @@ class CustomVerticalProductCard extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               // TODO: Dynamic prodImage
-              Placeholder(fallbackHeight: ScreenUtil().setHeight(80)),
+              Image.asset(
+                prodImage,
+                height: ScreenUtil().setHeight(80),
+                width: ScreenUtil().setWidth(80),
+                fit: BoxFit.cover,
+              ),
               SizedBox(height: ScreenUtil().setHeight(5)),
               CustomText(
                 text: prodName,
